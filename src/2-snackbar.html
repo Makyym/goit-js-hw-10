@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar Page</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles-form.css" />
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
       <h1>Welcome to Snackbar page</h1>
     </section>
+    <form class="form">
+      <label class="delay-box text-elements">
+        Delay (ms)
+        <input type="number" name="delay" class="delay-input text-elements" required />
+      </label>
+    
+      <fieldset class="state-input">
+        <legend text-elements>State</legend>
+        <label class="text-elements input-value">
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label class="text-elements">
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+      <button type="submit">Create notification</button>
+    </form>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
